@@ -1,136 +1,188 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Privacy Policy - Housie Game</title>
+
 <style>
 body{
     max-width:900px;
     margin:auto;
     font-family:Arial,Helvetica,sans-serif;
-    line-height:1.7;
+    line-height:1.8;
     padding:40px;
-}
-h1,h2{
     color:#333;
 }
+h1,h2{
+    color:#222;
+}
+a{
+    color:#1565C0;
+    text-decoration:none;
+}
+a:hover{
+    text-decoration:underline;
+}
+ul{
+    padding-left:20px;
+}
+footer{
+    margin-top:40px;
+    border-top:1px solid #ddd;
+    padding-top:20px;
+    color:#666;
+    font-size:14px;
+}
 </style>
+
 </head>
 
 <body>
 
 <h1>Privacy Policy</h1>
 
-<p>Last Updated: June 29, 2026</p>
+<p><strong>Last Updated:</strong> June 30, 2026</p>
 
 <p>
-This Privacy Policy explains how Housie Game ("we", "our", or "us") collects,
-uses, and protects your information when you use our mobile application.
+This Privacy Policy explains how <strong>Housie Game</strong> ("we", "our", or "us")
+collects, uses, stores, and protects your information when you use our mobile application.
+By using the application, you agree to the practices described in this Privacy Policy.
 </p>
 
 <h2>Information We Collect</h2>
 
-<p>We may collect the following information:</p>
+<p>We may collect the following information while you use the app:</p>
 
 <ul>
-<li>Anonymous user ID created during anonymous sign-in.</li>
-<li>Your display name (nickname) that you choose inside the app.</li>
-<li>Basic gameplay information.</li>
+<li>Anonymous user ID created through Firebase Anonymous Authentication.</li>
+<li>Your display name (nickname) entered in the app.</li>
+<li>Your optional profile picture, if you choose to upload one.</li>
+<li>Gameplay information such as rooms, scores, wins, achievements and leaderboard data.</li>
 <li>Crash reports and diagnostic information.</li>
+<li>Analytics information used to improve the app.</li>
 <li>Advertising identifiers used by Google AdMob.</li>
 </ul>
 
 <h2>Anonymous Authentication</h2>
 
 <p>
-Our app uses anonymous authentication to identify your device and save your
-game progress. We do not require email addresses, passwords, or phone numbers.
+Our app uses Firebase Anonymous Authentication to create a secure anonymous account.
+You are not required to create an account using an email address, password or phone number.
+This anonymous account allows us to save your game progress and profile securely.
 </p>
 
-<h2>Advertising</h2>
+<h2>Profile Information</h2>
 
 <p>
-We use Google AdMob to display advertisements. AdMob may collect and process
-certain device information and advertising identifiers to provide personalized
-or non-personalized ads in accordance with Google's Privacy Policy.
-</p>
-
-<h2>Analytics</h2>
-
-<p>
-We may use analytics services to understand app performance, improve gameplay,
-and fix issues.
+You may choose a display name and optionally upload a profile picture.
+Your display name and profile picture may be visible to other players in multiplayer rooms
+and on leaderboards.
 </p>
 
 <h2>How We Use Your Information</h2>
 
 <ul>
-<li>Provide multiplayer gameplay.</li>
+<li>Provide online multiplayer gameplay.</li>
 <li>Save your game progress.</li>
-<li>Improve app performance.</li>
-<li>Prevent abuse or cheating.</li>
-<li>Display advertisements.</li>
+<li>Display leaderboards and player rankings.</li>
+<li>Improve app performance and stability.</li>
+<li>Prevent abuse, cheating and fraudulent activity.</li>
+<li>Display advertisements using Google AdMob.</li>
+<li>Analyze app usage to improve gameplay and user experience.</li>
 </ul>
+
+<h2>Advertising</h2>
+
+<p>
+We use Google AdMob to display advertisements.
+Google AdMob may collect device identifiers and other information to provide personalized
+or non-personalized advertisements in accordance with Google's Privacy Policy.
+</p>
+
+<h2>Analytics</h2>
+
+<p>
+We use Firebase Analytics and Firebase Crashlytics to understand how the app is used,
+identify crashes, improve performance, and provide a better gaming experience.
+</p>
+
+<h2>Notifications</h2>
+
+<p>
+Firebase Cloud Messaging (FCM) may be used to send important notifications related
+to gameplay, updates or announcements.
+</p>
 
 <h2>Data Storage</h2>
 
 <p>
-Game data and anonymous account information are securely stored using Supabase
-and Firebase services.
+Game data, anonymous account information, display names and optional profile pictures
+are securely stored using Firebase and Supabase services.
 </p>
 
 <h2>Data Sharing</h2>
-<p>Update your privacy policy to mention that users may optionally upload a profile picture, which is stored and displayed to other players (e.g., on the leaderboard).</p>
 
 <p>
 We do not sell your personal information.
-Information may be shared only with trusted service providers such as:
+Your information may be processed only by trusted service providers that help operate
+our application, including:
 </p>
 
 <ul>
-<li>Google AdMob</li>
-<li>Google Firebase</li>
-<li>Supabase</li>
+<li>Google AdMob (Advertising)</li>
+<li>Google Firebase (Authentication, Analytics, Crash Reporting and Notifications)</li>
+<li>Supabase (Database and File Storage)</li>
 </ul>
 
 <h2>Children's Privacy</h2>
 
 <p>
-This app is not intended for children under the age of 13.
-We do not knowingly collect personal information from children.
+Housie Game is intended for a general audience.
+Children should use the app under the supervision of a parent or guardian.
+We do not knowingly collect personal information beyond what is necessary to provide
+the gameplay experience.
 </p>
 
-<h2>Security</h2>
+<h2>Data Security</h2>
 
 <p>
-We take reasonable measures to protect your information.
-However, no method of electronic transmission or storage is completely secure.
+We use industry-standard security measures and encrypted connections to protect your data.
+However, no method of electronic storage or transmission over the Internet is completely secure.
 </p>
 
 <h2>Your Rights</h2>
 
 <p>
-You may uninstall the application at any time to stop using the service.
-If you would like your anonymous game data removed, you may contact us using
-the email address below.
+You may delete your account and associated game data at any time using the
+<strong>Delete Account</strong> option available within the app.
+If you are unable to access the application, you may request deletion by contacting us
+using the email address below.
 </p>
 
 <h2>Changes to this Privacy Policy</h2>
 
 <p>
 We may update this Privacy Policy from time to time.
-Changes will be posted on this page.
+Any changes will be posted on this page with the updated revision date.
 </p>
 
 <h2>Contact Us</h2>
 
 <p>
-If you have any questions regarding this Privacy Policy, please contact us at:
+If you have any questions regarding this Privacy Policy or your data,
+please contact us:
 </p>
 
 <p>
 <strong>Email:</strong> vijji844@gmail.com
 </p>
 
+<footer>
+© 2026 Housie Game. All Rights Reserved.
+</footer>
+
 </body>
 </html>
+```
