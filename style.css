@@ -1,45 +1,52 @@
-body {
+```css
+/* style.css */
+
+* {
     margin: 0;
-    padding: 40px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: Arial, Helvetica, sans-serif;
-    background: #f5f7fa;
+    background: #f4f6f9;
     color: #333;
     line-height: 1.8;
 }
 
 .container {
     max-width: 900px;
-    margin: auto;
-    background: white;
+    margin: 40px auto;
+    background: #fff;
     padding: 40px;
     border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+    box-shadow: 0 8px 24px rgba(0,0,0,.08);
 }
 
-h1 {
-    color: #1565C0;
-    margin-bottom: 10px;
+header{
+    border-bottom:1px solid #eee;
+    padding-bottom:20px;
+    margin-bottom:30px;
 }
 
-h2 {
-    color: #1565C0;
-    margin-top: 35px;
+h1{
+    color:#1565C0;
+    margin-bottom:8px;
 }
 
-ul {
-    padding-left: 22px;
+h2{
+    margin-top:30px;
+    margin-bottom:10px;
+    color:#1565C0;
 }
 
-a {
-    color: #1565C0;
-    text-decoration: none;
+p{
+    margin-bottom:15px;
 }
 
-.footer {
-    margin-top: 50px;
-    text-align: center;
-    color: gray;
-    font-size: 14px;
+ul,ol{
+    margin-left:22px;
+    margin-bottom:15px;
 }
 
 nav{
@@ -48,5 +55,78 @@ nav{
 
 nav a{
     margin-right:20px;
+    text-decoration:none;
+    color:#1565C0;
     font-weight:bold;
 }
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+table th,
+table td{
+    border:1px solid #ddd;
+    padding:10px;
+    text-align:left;
+}
+
+table th{
+    background:#1565C0;
+    color:white;
+}
+
+.footer{
+    border-top:1px solid #eee;
+    margin-top:40px;
+    padding-top:20px;
+    color:#777;
+    font-size:14px;
+    text-align:center;
+}
+
+.badge{
+    display:inline-block;
+    padding:6px 12px;
+    background:#E3F2FD;
+    color:#1565C0;
+    border-radius:20px;
+    font-size:14px;
+    margin-top:10px;
+}
+
+.notice{
+    background:#FFF8E1;
+    border-left:5px solid #FFC107;
+    padding:15px;
+    margin:20px 0;
+}
+
+.success{
+    background:#E8F5E9;
+    border-left:5px solid #4CAF50;
+    padding:15px;
+    margin:20px 0;
+}
+
+@media(max-width:768px){
+
+.container{
+    margin:15px;
+    padding:25px;
+}
+
+nav a{
+    display:block;
+    margin:10px 0;
+}
+
+}
+```
